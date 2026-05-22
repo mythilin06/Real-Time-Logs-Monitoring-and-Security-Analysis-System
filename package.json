@@ -1,0 +1,18 @@
+{
+  "name": "log-monitoring-security-analytics",
+  "version": "1.0.0",
+  "description": "Real-time log monitoring and security analytics — Kaggle datasets, MongoDB, Python",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix backend && pip install -r python-service/requirements.txt",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:python\"",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:python": "python python-service/app.py",
+    "start": "npm run start --prefix backend",
+    "mongo": "docker compose up -d mongodb",
+    "ports": "powershell -ExecutionPolicy Bypass -File scripts/check-ports.ps1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
