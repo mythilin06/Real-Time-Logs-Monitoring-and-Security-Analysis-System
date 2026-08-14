@@ -28,7 +28,7 @@ See **[PORTS.md](PORTS.md)** for running multiple projects at once.
 ### 2. Install
 
 ```powershell
-cd "C:\Users\rahul\OneDrive\Desktop\Log Project"
+cd "C:\Users\mythi\OneDrive\Desktop\Log Project"
 npm run install:all
 ```
 
